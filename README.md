@@ -33,6 +33,8 @@ creds: system@roadtocareer.net 1234
 Creds: 01686606905 1234
 15. Now login to the admin again, go to transaction menu and search by your customer mobile number to check that payment is shown in transaction list
 
+## Test cases
+https://docs.google.com/spreadsheets/d/1JiGzHZnqsCzX6Yrr-AFVL5i-F5LjqEPZ/edit?usp=share_link&ouid=103304077434156054244&rtpof=true&sd=true
 
 ## Allure report
 
