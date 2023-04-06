@@ -56,7 +56,7 @@ public class Utils {
         Object obj = jsonParser.parse(new FileReader(fileName));
         JSONArray jsonArray = (JSONArray) obj;
 
-        JSONObject jsonObject = (JSONObject) jsonArray.get(3);
+        JSONObject jsonObject = (JSONObject) jsonArray.get(jsonArray.size()-2);
         jsonObject.put("password", newPassword);
 
         FileWriter file = new FileWriter(fileName);

@@ -28,4 +28,8 @@ dependencies {
     implementation group: 'io.qameta.allure', name: 'allure-testng', version: '2.20.1'
 
 }
-
+test {
+    useTestNG() {
+        suites "./src/test/resources/suite.xml"
+    }
+}

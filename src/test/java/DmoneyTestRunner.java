@@ -112,11 +112,9 @@ public class DmoneyTestRunner extends Setup {
         Thread.sleep(2000);
         dmoneyPage.updatePassword(newPassword);
         Thread.sleep(1000);
-
-
+//
         Utils.updateJSONList(1,newPassword,newPassword);
-
-
+//
         //Assertion
         String DataActual = dmoneyPage.assertUpdate.get(0).getText();
         String DataExpected = "User Update Successfully!";
@@ -125,14 +123,14 @@ public class DmoneyTestRunner extends Setup {
         Thread.sleep(1000);
     }
 
-    @Test(priority = 6, description = "Logout from Admin")
-    public void logoutFromAdmin() throws InterruptedException {
-        dmoneyPage = new DmoneyPage(driver);
-        Thread.sleep(1000);
-        dmoneyPage.btnOk.get(2).click();
-        dmoneyPage.btnIcon.get(0).click();
-        Thread.sleep(5000);
-        dmoneyPage.btnSignOut.get(1).click();
-        Thread.sleep(5000);
-    }
+//    @Test(priority = 6, description = "Logout from Admin")
+//    public void logoutFromAdmin() throws InterruptedException {
+//        dmoneyPage = new DmoneyPage(driver);
+//        Thread.sleep(1000);
+//        dmoneyPage.btnOk.get(2).click();
+//        dmoneyPage.btnIcon.get(0).click();
+//        Thread.sleep(5000);
+//        dmoneyPage.btnSignOut.get(1).click();
+//        Thread.sleep(5000);
+//    }
 }

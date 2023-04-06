@@ -103,18 +103,23 @@ public class TrnxTestRunner extends Setup{
 
         JSONObject customerObject = (JSONObject) users.get(users.size() - 2);
         String customerEmail = (String) customerObject.get("email");
+        Thread.sleep(1000);
         String customerPassword = (String) customerObject.get("password");
-
+        Thread.sleep(1000);
+//        String customerEmail = "customer2301@test.com";
+//        Thread.sleep(1000);
+//        String customerPassword = "1234";
+        Thread.sleep(1000);
         loginPage = new LoginPage(driver);
         loginPage.doLogin(customerEmail,customerPassword);
         Thread.sleep(1000);
 
-        //Assertion
-//        String DataActual = dmoneyPage.clickStatement.getText();
-//        String DataExpected = "Statement";
-//        Thread.sleep(1000);
-//        Assert.assertTrue(DataActual.contains(DataExpected));
-//        Thread.sleep(1000);
+       // Assertion
+        String DataActual = dmoneyPage.clickStatement.getText();
+        String DataExpected = "Statement";
+        Thread.sleep(1000);
+        Assert.assertTrue(DataActual.contains(DataExpected));
+        Thread.sleep(1000);
     }
 
     @Test(priority = 8, description = "Send money to another customer")
@@ -181,7 +186,7 @@ public class TrnxTestRunner extends Setup{
         Thread.sleep(1000);
     }
 
-    @Test(priority = 13, description = "Logout from Admin")
+    @Test(priority = 13, description = "check that payment is shown in transaction list")
     public void checkTransactionList() throws InterruptedException, IOException, ParseException {
         dmoneyPage = new DmoneyPage(driver);
         dmoneyPage.btnOk.get(2).click();
@@ -205,7 +210,7 @@ public class TrnxTestRunner extends Setup{
         String customerPhoneNumber = (String) customerObject.get("phoneNumber");
         Thread.sleep(3000);
         dmoneyPage.checkTransactionList(customerPhoneNumber);
-        Thread.sleep(2000);
+        Thread.sleep(5000);
 
         WebElement row = dmoneyPage.table.findElements(By.tagName("tr")).get(4);
         Thread.sleep(5000);

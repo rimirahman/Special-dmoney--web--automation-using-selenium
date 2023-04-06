@@ -130,7 +130,7 @@ public class DmoneyPage {
         btnEdit.get(0).click();
         Thread.sleep(1000);
         btnpassword.get(0).sendKeys(Keys.CONTROL + "a" + Keys.BACK_SPACE);
-        Thread.sleep(1000);
+        Thread.sleep(3000);
         btnpassword.get(0).sendKeys(newPassword);
         Thread.sleep(1000);
         btnSubmit.click();
@@ -159,7 +159,7 @@ public class DmoneyPage {
         Thread.sleep(1000);
         btnYes.get(2).click();
     }
-    public void sendMoney(String newCustomerPhoneNumber) throws IOException, ParseException, InterruptedException {
+    public void sendMoney(String newCustomerPhoneNumber) throws InterruptedException {
         clickSendMoney.click();
         Thread.sleep(1000);
         txtaccount.get(0).sendKeys(newCustomerPhoneNumber);
