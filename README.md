@@ -38,9 +38,14 @@ https://docs.google.com/spreadsheets/d/1JiGzHZnqsCzX6Yrr-AFVL5i-F5LjqEPZ/edit?us
 
 ## Allure report
 
+![Report](https://user-images.githubusercontent.com/122162468/230435316-f7cc7e89-5522-47d2-ab4b-e46dbf702279.JPG)
+
+![Behaviour](https://user-images.githubusercontent.com/122162468/230435330-4cc5fe14-de26-4d08-b65b-c56be89234f0.JPG)
 
 
 ## Video recording of the automation
+
+https://user-images.githubusercontent.com/122162468/230435460-db2aad12-3b98-4497-be00-434cf1fd28cc.mp4
 
 
 
