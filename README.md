@@ -38,10 +38,9 @@ https://docs.google.com/spreadsheets/d/1JiGzHZnqsCzX6Yrr-AFVL5i-F5LjqEPZ/edit?us
 
 ## Allure report
 
-![Report](https://user-images.githubusercontent.com/122162468/230435316-f7cc7e89-5522-47d2-ab4b-e46dbf702279.JPG)
+![ReportJPG](https://user-images.githubusercontent.com/122162468/230754616-a91e83a6-8ec1-4ed6-8438-3c893045cb8d.JPG)
 
-![Behaviour](https://user-images.githubusercontent.com/122162468/230435330-4cc5fe14-de26-4d08-b65b-c56be89234f0.JPG)
-
+![Behaviour](https://user-images.githubusercontent.com/122162468/230754619-94ec434c-bf41-4f02-9ecf-d0d55f2ba54f.JPG)
 
 ## Video recording of the automation
 
